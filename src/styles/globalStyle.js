@@ -29,7 +29,15 @@ const GlobalStyle = createGlobalStyle`
 
     p {
         font-size: 2rem;
-        line-height: 1.0;
+        line-height: 1.2;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 `;
 

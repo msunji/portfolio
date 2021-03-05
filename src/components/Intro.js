@@ -4,14 +4,21 @@ import Project from "./Project";
 
 // some styled components
 const IntroText = styled.div`
-  text-align: center;
+  text-align: left;
+  max-width: 700px;
+  padding-top: 20em;
+  margin-bottom: 6rem;
+`;
+
+const IntroHeader = styled.h1`
+  font-size: 4rem;
 `;
 
 function Intro() {
   return (
     <div className="intro">
       <IntroText>
-        <h1>Hello, I'm Marge</h1>
+        <IntroHeader>Hello, I'm Marge</IntroHeader>
         <p>I'm a front-end web developer and hobby baker based in Taipei.</p>
         <p>
           You can read my notes about code and everything under the sun over
