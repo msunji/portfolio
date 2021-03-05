@@ -19,10 +19,9 @@ function Intro() {
     <div className="intro">
       <IntroText>
         <IntroHeader>Hello, I'm Marge</IntroHeader>
-        <p>I'm a front-end web developer and hobby baker based in Taipei.</p>
         <p>
-          You can read my notes about code and everything under the sun over
-          here.
+          I'm a front-end web developer and hobby baker based in Taipei. I keep
+          track of notes and things here.
         </p>
       </IntroText>
 
