@@ -5,11 +5,15 @@ function Header() {
   return (
     <div className="header">
       <Link to="/">
-        <h1>MCONSUNJI</h1>
+        <p>MCONSUNJI</p>
       </Link>
 
       <Link to="/about">
         <p>About</p>
+      </Link>
+
+      <Link to="/notes">
+        <p>Notes</p>
       </Link>
     </div>
   );
