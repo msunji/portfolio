@@ -34,10 +34,12 @@ const GlobalStyle = createGlobalStyle`
 
     .container {
         max-width: 1200px;
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding: 1rem 2rem 1rem 2rem;
     }
 `;
 
