@@ -1,11 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
+
+const FooterText = styled.div`
+  text-align: center;
+`;
 
 function Footer() {
   return (
-    <div className="footer">
+    <FooterText>
       Made with love and lots of tea by <Link to="/">Marge</Link>.
-    </div>
+    </FooterText>
   );
 }
 
