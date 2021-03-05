@@ -23,8 +23,8 @@ function App() {
                 <About />
               </Route>
             </Switch>
+            <Footer />
           </div>
-          <Footer />
         </div>
       </Router>
     </>
