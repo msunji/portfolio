@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Sporting Grotesque";
+  src: url("./SportingGrotesque.woff") format("woff"),
+    url("./SportingGrotesque.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("./WorkSans-Regular.woff") format("woff"),
+    url("./WorkSans-Regular.woff2") format("woff2");
+}
