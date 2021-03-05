@@ -1,10 +1,18 @@
 import { createGlobalStyle } from "styled-components";
+import reset from "styled-reset";
 
 const GlobalStyle = createGlobalStyle`
+    ${reset}
     // Main colours
     :root {
-        --main-bg-color: #F4EFE1;
-        --main-text-color: #2B230D;
+        --main-bg-color: #E9E2D5;
+        --main-text-color: #2A251C;
+    }
+
+    *,
+    *::before,
+    *::after{
+        box-sizing: border-box;
     }
 
     body {
@@ -18,10 +26,10 @@ const GlobalStyle = createGlobalStyle`
     h1, h2, h3, h4 {
         font-family: "Sporting Grotesque", serif;
     }
-    
+
     p {
         font-size: 2rem;
-        line-height: 1.2;
+        line-height: 1.0;
     }
 `;
 
