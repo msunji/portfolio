@@ -19,11 +19,29 @@ const IntroSubtitle = styled.p`
   line-height: 2.6rem;
 `;
 
+const IntroName = styled.span`
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: #d78a8a;
+    top: 40%;
+    height: 40%;
+    width: 100%;
+    z-index: -1;
+    right: 0;
+  }
+`;
+
 function Intro() {
   return (
     <div className="intro">
       <IntroText>
-        <IntroHeader>Hello, I'm Marge</IntroHeader>
+        <IntroHeader>
+          Hello, I'm <IntroName>Marge</IntroName>
+        </IntroHeader>
         <IntroSubtitle>
           I'm a front-end web developer and hobby baker based in Taipei. I keep
           track of notes and things here.
