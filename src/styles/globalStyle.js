@@ -28,8 +28,8 @@ const GlobalStyle = createGlobalStyle`
     }
 
     p {
-        font-size: 2rem;
-        line-height: 1.2;
+        font-size: 1.5rem;
+        line-height: 1.6;
     }
 
     .container {
