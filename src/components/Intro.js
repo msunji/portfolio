@@ -14,15 +14,20 @@ const IntroHeader = styled.h1`
   font-size: 4rem;
 `;
 
+const IntroSubtitle = styled.p`
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+`;
+
 function Intro() {
   return (
     <div className="intro">
       <IntroText>
         <IntroHeader>Hello, I'm Marge</IntroHeader>
-        <p>
+        <IntroSubtitle>
           I'm a front-end web developer and hobby baker based in Taipei. I keep
           track of notes and things here.
-        </p>
+        </IntroSubtitle>
       </IntroText>
 
       <div className="project-list">
