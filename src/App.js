@@ -13,8 +13,11 @@ function App() {
       <GlobalStyle />
       <Router>
         <div className="App">
-          <Header />
-          <div className="content">
+          <div className="container">
+            <Header />
+          </div>
+
+          <div className="container">
             <Switch>
               <Route exact path="/">
                 <Intro />
