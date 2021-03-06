@@ -39,12 +39,16 @@ function Intro() {
   return (
     <div className="intro">
       <svg
-        className="intro__blob"
+        id="intro__blob"
         viewBox="0 0 200 200"
         xmlns="http://www.w3.org/2000/svg"
       >
+        <linearGradient id="blobGradient" gradientTransform="rotate(120)">
+          <stop class="blobGrad1" offset="0%" />
+          <stop class="blobGrad2" offset="100%" stop-color="#daa520" />
+        </linearGradient>
         <path
-          fill="#08BDBA"
+          id="blobFill"
           d="M43.4,-61.2C51,-54.2,48.4,-34.5,52.7,-17.9C57,-1.3,68.3,12.3,64.4,20C60.6,27.6,41.6,29.4,28.4,34.6C15.1,39.8,7.6,48.4,-3.6,53.4C-14.8,58.4,-29.7,59.8,-45,55.3C-60.4,50.8,-76.3,40.4,-81.2,26.2C-86.1,12,-80,-6,-73.9,-23.8C-67.8,-41.5,-61.7,-59,-49.4,-64.5C-37.1,-70,-18.5,-63.5,-0.3,-63.1C17.9,-62.6,35.8,-68.2,43.4,-61.2Z"
           transform="translate(100 100)"
         />

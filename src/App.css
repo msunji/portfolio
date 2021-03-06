@@ -1,7 +1,19 @@
 @import "./assets/fonts/font.css";
 
-.intro__blob {
+#intro__blob {
   position: absolute;
-  width: 50%;
+  width: 100%;
+  max-width: 800px;
   z-index: -1000;
+}
+
+#blobFill {
+  fill: url(#blobGradient);
+}
+
+.blobGrad1 {
+  stop-color: #edd942;
+}
+.blobGrad2 {
+  stop-color: #e40881;
 }
