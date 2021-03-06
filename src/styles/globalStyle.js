@@ -30,6 +30,11 @@ const GlobalStyle = createGlobalStyle`
     p {
         font-size: 1.5rem;
         line-height: 1.6;
+        margin-bottom: 1em;
+    }
+
+    a {
+        color: var(--main-text-color);
     }
 
     .container {
