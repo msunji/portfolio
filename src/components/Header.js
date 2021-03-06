@@ -2,6 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+const NavContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
 const NavLinks = styled.ul`
   display: flex;
   align-items: center;
@@ -9,7 +14,7 @@ const NavLinks = styled.ul`
 
 function Header() {
   return (
-    <div className="header">
+    <NavContainer>
       <Link to="/">
         <p>MCONSUNJI</p>
       </Link>
@@ -24,7 +29,7 @@ function Header() {
           <p>Light/Dark Mode</p>
         </li>
       </NavLinks>
-    </div>
+    </NavContainer>
   );
 }
 
