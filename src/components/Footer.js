@@ -4,6 +4,8 @@ import styled from "styled-components";
 
 const FooterText = styled.div`
   text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 `;
 
 function Footer() {
