@@ -17,6 +17,7 @@ const IntroHeader = styled.h1`
 const IntroSubtitle = styled.p`
   font-size: 2.2rem;
   line-height: 2.6rem;
+  transition: all 0.5s linear;
 `;
 
 const IntroName = styled.span`
@@ -45,7 +46,7 @@ function Intro() {
       >
         <linearGradient id="blobGradient" gradientTransform="rotate(120)">
           <stop class="blobGrad1" offset="0%" />
-          <stop class="blobGrad2" offset="100%" stop-color="#daa520" />
+          <stop class="blobGrad2" offset="70%" />
         </linearGradient>
         <path
           id="blobFill"
@@ -58,8 +59,7 @@ function Intro() {
           Hello, I'm <IntroName>Marge</IntroName>
         </IntroHeader>
         <IntroSubtitle>
-          I'm a front-end web developer and hobby baker based in Taipei. I keep
-          track of notes and things here.
+          I'm a front-end web developer and hobby baker based in Taipei.
         </IntroSubtitle>
       </IntroText>
 
