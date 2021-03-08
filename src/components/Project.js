@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const ProjectTile = styled.div`
   position: relative;
+  margin-bottom: 5rem;
 `;
 
 const ProjectInfo = styled.div`
@@ -17,13 +18,17 @@ const ProjectInfo = styled.div`
 
 const ProjectTitle = styled.h2``;
 
+const ProjectDescription = styled.p`
+  margin-bottom: 0;
+`;
+
 function Project(props) {
   return (
     <ProjectTile>
       <img src={props.thumbnail} alt={`Preview for ${props.title} project`} />
       <ProjectInfo>
         <ProjectTitle>{props.title}</ProjectTitle>
-        <p>{props.desc}</p>
+        <ProjectDescription>{props.desc}</ProjectDescription>
       </ProjectInfo>
     </ProjectTile>
   );
