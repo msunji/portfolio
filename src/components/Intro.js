@@ -73,12 +73,12 @@ function Intro() {
         <Project
           title="API project goes here"
           desc="Make a project that pulls data from an API"
-          thumbnail="http://placecorgi.com/250"
+          thumbnail="http://placecorgi.com/450/500"
         />
         <Project
           title="Bookmark app?"
           desc="A bookmark app"
-          thumbnail="http://placecorgi.com/250"
+          thumbnail="http://placecorgi.com/450/500"
         />
       </div>
     </div>
