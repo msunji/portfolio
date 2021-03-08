@@ -68,7 +68,7 @@ function Intro() {
         <Project
           title="IDAS Conference Website"
           desc="A remake of a website created for the 2018 IDAS Conference"
-          thumbnail="http://placecorgi.com/250"
+          thumbnail="http://placecorgi.com/450/500"
         />
         <Project
           title="API project goes here"
