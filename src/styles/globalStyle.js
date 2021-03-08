@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
     ${reset}
     // Main colours
     :root {
-        --main-bg-color: #E9E2D5;
+        --main-bg-color: #dbdbdb;
         --main-text-color: #2A251C;
     }
 
@@ -26,6 +26,22 @@ const GlobalStyle = createGlobalStyle`
     h1, h2, h3, h4 {
         font-family: "Sporting Grotesque", serif;
     }
+    
+    h1 {
+        font-size: 1.951em;
+    }
+    h2 {
+       font-size: 1.688em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    h4 {
+        font-size: 1.301em;
+    }
+    h5 {
+        font-size: 1.125em;
+    }
 
     p {
         font-size: 1.5rem;
@@ -38,6 +54,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     .container {
+        width: 100%;
         max-width: 1200px;
         min-height: 100vh;
         display: grid;
