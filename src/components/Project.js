@@ -6,6 +6,8 @@ const ProjectTile = styled.div`
   margin-bottom: 5rem;
 `;
 
+const ProjectThumbnail = styled.picture``;
+
 const ProjectInfo = styled.div`
   background: white;
   max-width: 600px;
@@ -24,8 +26,11 @@ const ProjectDescription = styled.p`
 
 function Project(props) {
   return (
-    <ProjectTile>
-      <img src={props.thumbnail} alt={`Preview for ${props.title} project`} />
+    <ProjectTile className={props.class}>
+      <ProjectThumbnail>
+        <source srcset={props.thumbnail} />
+        <img src={props.thumbnail} alt={`Preview for ${props.title} project`} />
+      </ProjectThumbnail>
       <ProjectInfo>
         <ProjectTitle>{props.title}</ProjectTitle>
         <ProjectDescription>{props.desc}</ProjectDescription>

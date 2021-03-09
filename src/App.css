@@ -17,3 +17,18 @@
 .blobGrad2 {
   stop-color: #8e3add;
 }
+
+.item1 {
+  grid-area: a;
+}
+
+.item2 {
+  grid-area: b;
+  align-self: start;
+  align-items: center;
+}
+
+.item3 {
+  grid-area: c;
+  align-self: center;
+}

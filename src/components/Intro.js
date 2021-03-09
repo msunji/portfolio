@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import Project from "./Project";
+import Projects from "./Projects";
 
 // some styled components
 const IntroText = styled.div`
   text-align: left;
   max-width: 700px;
   padding-top: 20em;
-  margin-bottom: 6rem;
+  margin-bottom: 12rem;
 `;
 
 const IntroHeader = styled.h1`
@@ -34,6 +34,13 @@ const IntroName = styled.span`
     z-index: -1;
     right: 0;
   }
+`;
+
+const ProjectHeader = styled.h1`
+  padding-bottom: 1rem;
+  border-bottom: 2px solid black;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
 `;
 
 function Intro() {
@@ -63,24 +70,8 @@ function Intro() {
         </IntroSubtitle>
       </IntroText>
 
-      <div className="project-list">
-        <h2>Projects</h2>
-        <Project
-          title="IDAS Conference Website"
-          desc="A remake of a website created for the 2018 IDAS Conference"
-          thumbnail="http://placecorgi.com/450/500"
-        />
-        <Project
-          title="API project goes here"
-          desc="Make a project that pulls data from an API"
-          thumbnail="http://placecorgi.com/450/500"
-        />
-        <Project
-          title="Bookmark app?"
-          desc="A bookmark app"
-          thumbnail="http://placecorgi.com/450/500"
-        />
-      </div>
+      <ProjectHeader>Projects</ProjectHeader>
+      <Projects />
     </div>
   );
 }
