@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
     ${reset}
     // Main colours
     :root {
-        --main-bg-color: #dbdbdb;
+        --main-bg-color: #e7e7e7;
         --main-text-color: #2A251C;
     }
 
