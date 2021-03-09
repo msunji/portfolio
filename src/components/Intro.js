@@ -13,6 +13,7 @@ const IntroText = styled.div`
 
 const IntroHeader = styled.h1`
   font-size: 4rem;
+  margin-bottom: 0.5rem;
 `;
 
 const IntroSubtitle = styled.p`
@@ -57,7 +58,7 @@ function Intro() {
           />
         </svg>
         <IntroText>
-          <IntroHeader>Hey there! I'm Marge </IntroHeader>
+          <IntroHeader>Hey! I'm Marge </IntroHeader>
           <IntroSubtitle>
             I'm a front-end web developer and hobby baker based in Taipei.
           </IntroSubtitle>
