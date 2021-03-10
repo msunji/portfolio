@@ -5,11 +5,12 @@ const GlobalStyle = createGlobalStyle`
     ${reset}
     // Main colours
     :root {
-        --main-bg-color: #fff8f8;
-        --main-text-color: #2A251C;
-        --primary-red: #ed1919;
+        --main-bg-color: #F3EFE3;
+        --main-text-color: #0D443D;
+        --primary-red: #E0540F;
         --primary-yellow: #edd219;
-        --primary-blue: #195eed;
+        --primary-blue: #2E60A4;
+        --primary-pink: #F6C9BE;
     }
 
     *,
@@ -53,11 +54,27 @@ const GlobalStyle = createGlobalStyle`
     }
 
     a {
-        color: var(--main-text-color);
+        color: var(--primary-blue);
+        text-decoration: none;
+        border-bottom: 2px solid var(--primary-red);
+    }
+
+    .boxLink {
+        padding: 1rem 2rem 1rem 2rem;
+        border: 2px solid var(--primary-blue);
+        box-shadow: 5px 5px var(--primary-blue);
+        background: linear-gradient(to left top, white 50%, var(--primary-yellow) 50%);
+        background-size: 200% 200%;
+        background-position: bottom right;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+            background-position: top left;
+        }
     }
 
     .container {
-        width: 100%;
+        width: 90%;
         max-width: 1200px;
         min-height: 100vh;
         display: grid;
