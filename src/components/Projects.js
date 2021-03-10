@@ -3,7 +3,8 @@ import Project from "./Project";
 
 const ProjectIntro = styled.div`
   display: grid;
-  grid-template-columns: 1.5fr 2fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(2);
   margin-bottom: 5em;
 
   > h2 {
