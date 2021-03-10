@@ -21,11 +21,6 @@ function Header() {
 
       <NavLinks>
         <li>
-          <Link to="/about">
-            <p>About</p>
-          </Link>
-        </li>
-        <li>
           <p>Light/Dark Mode</p>
         </li>
       </NavLinks>
