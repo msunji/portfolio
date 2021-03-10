@@ -5,6 +5,11 @@ import { Link } from "react-router-dom";
 const NavContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  font-size: 2rem;
+`;
+
+const NavHome = styled(Link)`
+  border-bottom: none;
 `;
 
 const NavLinks = styled.ul`
@@ -15,9 +20,7 @@ const NavLinks = styled.ul`
 function Header() {
   return (
     <NavContainer>
-      <Link to="/">
-        <p>MCONSUNJI</p>
-      </Link>
+      <NavHome to="/">MCONSUNJI</NavHome>
 
       <NavLinks>
         <li>
