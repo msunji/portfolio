@@ -1,23 +1,5 @@
 @import "./assets/fonts/font.css";
 
-#intro__blob {
-  position: absolute;
-  width: 100%;
-  max-width: 800px;
-  z-index: -1000;
-}
-
-#blobFill {
-  fill: url(#blobGradient);
-}
-
-.blobGrad1 {
-  stop-color: #29d4af;
-}
-.blobGrad2 {
-  stop-color: #eac9bd;
-}
-
 .item1 {
   grid-area: a;
 }
