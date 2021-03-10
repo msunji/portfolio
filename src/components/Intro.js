@@ -11,11 +11,11 @@ const Blobs = styled.div`
   max-width: 1000px;
   z-index: -1000;
 
-  & > #blob--yellow {
+  & > #blob--pink {
     position: absolute;
     top: 40;
     left: 90;
-    fill: var(--primary-yellow);
+    fill: var(--primary-pink);
     width: 60%;
     z-index: 1;
   }
@@ -68,7 +68,7 @@ function Intro() {
       <IntroContainer>
         <Blobs>
           <svg
-            id="blob--yellow"
+            id="blob--pink"
             viewBox="0 0 200 200"
             xmlns="http://www.w3.org/2000/svg"
           >
