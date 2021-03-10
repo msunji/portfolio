@@ -5,8 +5,11 @@ const GlobalStyle = createGlobalStyle`
     ${reset}
     // Main colours
     :root {
-        --main-bg-color: #e7e7e7;
+        --main-bg-color: #fff8f8;
         --main-text-color: #2A251C;
+        --primary-red: #ed1919;
+        --primary-yellow: #edd219;
+        --primary-blue: #195eed;
     }
 
     *,
