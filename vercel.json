@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/notes",
-      "destination": "https://notes-dusky-three.vercel.app/"
+      "destination": "https://notes.mconsunji.com"
     }
   ]
 }
