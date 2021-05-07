@@ -22,6 +22,9 @@ function App() {
               <Route exact path="/about">
                 <About />
               </Route>
+              <Route exact path="/notes">
+                <Redirect to="https://notes.mconsunji.com" />
+              </Route>
             </Switch>
             <Footer />
           </div>
