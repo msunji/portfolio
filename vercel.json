@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/about", "destination": "https://notes.mconsunji.com" }
+    { "source": "/notes", "destination": "https://notes.mconsunji.com" }
   ]
 }
