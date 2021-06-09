@@ -37,9 +37,9 @@ const ProjectList = styled.div`
 
 const Projects = () => {
   return (
-    <div>
-      <ProjectIntro>
-        <h2>Projects</h2>
+    <>
+      <ProjectIntro className="container">
+        <h3>Projects</h3>
         <div>
           <svg
             id="blob--yellow"
@@ -77,7 +77,7 @@ const Projects = () => {
           thumbnail="http://placecorgi.com/450/500"
         />
       </ProjectList>
-    </div>
+    </>
   );
 };
 

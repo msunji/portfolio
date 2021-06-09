@@ -46,7 +46,7 @@ function Header() {
           <a href="">Projects</a>
         </li> */}
             <li>
-              <Link href="/about">About</Link>
+              <a href="/about">About</a>
             </li>
             <li>
               <a href="https://notes.mconsunji.com">Notes</a>
