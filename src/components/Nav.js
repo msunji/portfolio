@@ -15,6 +15,7 @@ const NavHome = styled(Link)`
   border-bottom: none;
   position: relative;
   z-index: 1;
+  color: #0d443d;
 
   &:before {
     content: "\\3030";
@@ -22,11 +23,11 @@ const NavHome = styled(Link)`
     top: 20%;
     z-index: -2;
     transform: scale(4);
-    color: orange;
+    color: #75eb29;
   }
 
   & p {
-    font-size: 0.9em;
+    font-size: 1em;
     line-height: 1;
     margin-bottom: 0;
     padding-top: 0.05rem;
