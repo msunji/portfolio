@@ -17,14 +17,17 @@ function About() {
     <AboutContainer id="about">
       <Grid className="container">
         <div>
-          <h3>About Me</h3>
+          <h3>
+            About
+            <br /> Me
+          </h3>
         </div>
         <div>
           <p>
-            My friends call me Marge. I come from an economic research
-            background, but I've always had a knack for making things both
-            physical and digital. Baking, arts and crafts, pottery, and graphic
-            design, I've done it all.
+            My name is Marge (short for Margaret). I come from an economic
+            research background, but I've always had a knack for making things
+            both physical and digital. Baking, arts and crafts, pottery, and
+            graphic design, I've done it all.
           </p>
           <p>
             Previously, I was working with <b>Python</b> for data visualisation
