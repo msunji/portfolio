@@ -17,25 +17,44 @@ const NavHome = styled(Link)`
 const NavLinks = styled.ul`
   display: flex;
   align-items: center;
+
+  li {
+    display: flex;
+    flex-direction: row;
+
+    &:not(:last-of-type) {
+      margin-right: 3em;
+    }
+  }
+
+  a,
+  a:visited {
+    text-decoration: none;
+    border-bottom: none;
+  }
 `;
 
 function Header() {
   return (
-    <NavContainer>
-      <NavHome to="/">MCONSUNJI</NavHome>
+    <>
+      <div className="container">
+        <NavContainer>
+          <NavHome to="/">MCONSUNJI</NavHome>
 
-      <NavLinks>
-        <li>
-          <a href="">01. Works</a>
-        </li>
-        <li>
-          <a href="">02. About</a>
-        </li>
-        <li>
-          <a href="">03. Notes</a>
-        </li>
-      </NavLinks>
-    </NavContainer>
+          <NavLinks>
+            {/* <li>
+          <a href="">Projects</a>
+        </li> */}
+            <li>
+              <Link href="/about">About</Link>
+            </li>
+            <li>
+              <a href="https://notes.mconsunji.com">Notes</a>
+            </li>
+          </NavLinks>
+        </NavContainer>
+      </div>
+    </>
   );
 }
 
