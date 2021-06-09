@@ -13,18 +13,16 @@ function App() {
       <GlobalStyle />
       <Router>
         <div className="App">
-          <div className="container">
-            <Nav />
-            <Switch>
-              <Route exact path="/">
-                <Intro />
-              </Route>
-              <Route exact path="/about">
-                <About />
-              </Route>
-            </Switch>
-            <Footer />
-          </div>
+          <Nav />
+          <Switch>
+            <Route exact path="/">
+              <Intro />
+            </Route>
+            <Route exact path="/about">
+              <About />
+            </Route>
+          </Switch>
+          <Footer />
         </div>
       </Router>
     </>
