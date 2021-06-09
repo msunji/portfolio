@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
 import GlobalStyle from "./styles/globalStyle";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import "./App.css";
-import Header from "./components/Header";
+import "./app.css";
+import Nav from "./components/Nav";
 import Intro from "./components/Intro";
 import About from "./components/About";
 import Footer from "./components/Footer";
@@ -14,7 +14,7 @@ function App() {
       <Router>
         <div className="App">
           <div className="container">
-            <Header />
+            <Nav />
             <Switch>
               <Route exact path="/">
                 <Intro />
