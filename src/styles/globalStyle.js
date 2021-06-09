@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
     ${reset}
     // Main colours
     :root {
-        --main-bg-color: #F3EFE3;
+        --main-bg-color: #f9efdd;
         --main-text-color: #0D443D;
         --primary-red: #E0540F;
         --primary-yellow: #edd219;
@@ -19,6 +19,11 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    html, body {
+        font: 18px/1.5 'Roboto';
+        scroll-behavior: smooth;
+    }
+
     body {
         background: var(--main-bg-color);
         color: var(--main-text-color);
@@ -27,30 +32,44 @@ const GlobalStyle = createGlobalStyle`
         font-size: 16px;
     }
 
+
     h1, h2, h3, h4 {
         font-family: "Sporting Grotesque", serif;
     }
     
     h1 {
-        font-size: 1.951em;
+        font-size: 5.06em;
+        line-height: 1.19em;
+        padding-top: 0.253em;
+        margin-bottom: 0.0440em;
     }
+    
     h2 {
-       font-size: 1.688em;
+        font-size: 3.39em;
+        line-height: 1.33em;
+        padding-top: 0.328em;
+        margin-bottom: 0.115em;
     }
+    
     h3 {
-        font-size: 1.5em;
+        font-size: 2.28em;
+        line-height: 1.32em;
+        padding-top: 0.317em;
+        margin-bottom: 0.341em;
     }
+    
     h4 {
-        font-size: 1.301em;
+        font-size: 1.50em;
+        line-height: 2.00em;
+        padding-top: 0.667em;
+        margin-bottom: 0.333em;
     }
-    h5 {
-        font-size: 1.125em;
-    }
-
+    
     p {
-        font-size: 1.5rem;
-        line-height: 1.6;
-        margin-bottom: 1em;
+        font-size: 1.50em;
+        line-height: 1.50em;
+        padding-top: 0.389em;
+        margin-bottom: 1.11em;
     }
 
     a {
@@ -76,12 +95,13 @@ const GlobalStyle = createGlobalStyle`
     .container {
         width: 90%;
         max-width: 1200px;
-        min-height: 100vh;
-        display: grid;
-        grid-template-rows: auto 1fr auto;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 1rem 2rem 1rem 2rem;
+        margin: 0 auto;
+    }
+
+    footer {
+        border-top: 1px solid brown;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 `;
 
