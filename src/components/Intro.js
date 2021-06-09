@@ -4,7 +4,19 @@ import About from "./About";
 import Projects from "./Projects";
 
 // some styled components
-const IntroContainer = styled.div``;
+const IntroContainer = styled.div`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  h1 {
+    font-size: 4em;
+    line-height: 1.2;
+  }
+`;
 
 const Blobs = styled.div`
   position: relative;
@@ -28,39 +40,13 @@ const Blobs = styled.div`
   }
 `;
 
-const IntroText = styled.div`
-  text-align: left;
-  max-width: 700px;
-  padding-top: 20em;
-  margin-bottom: 12rem;
+const Underline = styled.span`
+  border-bottom: 2px solid red;
 `;
 
-const IntroHeader = styled.h1`
-  font-size: 4rem;
-  margin-bottom: 0.5rem;
+const Symbols = styled.span`
+  color: red;
 `;
-
-const IntroSubtitle = styled.p`
-  font-size: 2.2rem;
-  line-height: 2.6rem;
-  transition: all 0.5s linear;
-`;
-
-// const IntroName = styled.span`
-//   position: relative;
-//   display: inline-block;
-
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     background: #d78a8a;
-//     top: 40%;
-//     height: 40%;
-//     width: 100%;
-//     z-index: -1;
-//     right: 0;
-//   }
-// `;
 
 function Intro() {
   return (
@@ -91,15 +77,14 @@ function Intro() {
           </svg>
         </Blobs>
 
-        <IntroText>
-          <IntroHeader>Hey! I'm Marge </IntroHeader>
-          <IntroSubtitle>
-            I'm a front-end web developer and hobby baker based in Taipei.
-          </IntroSubtitle>
-        </IntroText>
+        <h1>
+          Hey! ✌🏻 I'm <Underline>Marge Consunji</Underline> <br />
+          <Symbols>✹</Symbols> I'm a front-end developer <br /> based in Taipei
+          🥟
+        </h1>
       </IntroContainer>
-      <About />
-      <Projects />
+      {/* <About /> */}
+      {/* <Projects /> */}
     </div>
   );
 }
