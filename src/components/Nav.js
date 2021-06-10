@@ -23,7 +23,7 @@ const NavHome = styled(Link)`
     top: 20%;
     z-index: -2;
     transform: scale(4);
-    color: #75eb29;
+    color: orange;
   }
 
   & p {
