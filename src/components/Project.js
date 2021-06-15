@@ -19,7 +19,7 @@ const ProjectInfo = styled.div`
   top: 30%;
 `;
 
-const ProjectTitle = styled.h2``;
+const ProjectTitle = styled.h3``;
 
 const ProjectDescription = styled.p`
   margin-bottom: 0;
