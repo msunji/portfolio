@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Button from "./Button";
 
 const ProjectTile = styled.div`
   position: relative;
@@ -34,6 +35,7 @@ function Project(props) {
       <ProjectInfo>
         <ProjectTitle>{props.title}</ProjectTitle>
         <ProjectDescription>{props.desc}</ProjectDescription>
+        <Button text="View Project" link="" />
       </ProjectInfo>
     </ProjectTile>
   );
