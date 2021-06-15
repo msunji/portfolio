@@ -29,6 +29,35 @@ const Symbols = styled.span`
   color: red;
 `;
 
+const HandWave = styled.span`
+  animation: wave 2s infinite;
+  display: inline-block;
+
+  @keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    }
+    20% {
+      transform: rotate(-14deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-14deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+`;
+
 function Intro() {
   return (
     <div className="intro">
@@ -44,7 +73,7 @@ function Intro() {
       </svg>
       <IntroContainer className="container">
         <h1>
-          Hey! ✌🏻 <br />
+          Hey! <HandWave>✌🏻</HandWave> <br />
           I'm <Underline>Marge Consunji</Underline> <br />
           <Symbols>✹</Symbols> I'm a front-end developer <br /> based in Taipei
           🥟
