@@ -10,7 +10,7 @@ const IntroContainer = styled.div`
   align-items: center;
   text-align: center;
   height: 100%;
-  height: 60vh;
+  height: 80vh;
   h1 {
     font-size: 4em;
     line-height: 1.2;

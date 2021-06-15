@@ -24,11 +24,11 @@ const Projects = () => {
           notes, you can read about them here.
         </p>
       </div>
-      <ProjectList className="container">
+      <div className="container">
         {ProjectInfo.map(({ id, title, desc, thumb }) => (
           <Project key={id} title={title} desc={desc} thumbnail={thumb} />
         ))}
-      </ProjectList>
+      </div>
     </ProjectList>
   );
 };
