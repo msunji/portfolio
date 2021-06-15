@@ -56,6 +56,26 @@ const NavLinks = styled.ul`
   a:visited {
     text-decoration: none;
     border-bottom: none;
+    transition: all 0.5s ease;
+  }
+
+  a:hover,
+  a:focus {
+    color: blue;
+    text-decoration: underline;
+  }
+
+  .circle {
+    height: 1em;
+    fill: #0D443D;
+  }
+
+  .circle:
+
+  li:hover {
+    .circle {
+      animation: fill-circle 0.4s linear;
+    }
   }
 `;
 
@@ -70,15 +90,16 @@ function Header() {
           </NavHome>
 
           <NavLinks>
-            {/* <li>
-          <a href="">Projects</a>
-        </li> */}
             <li>
-              <FaCircle />
-              <a href="/about">About</a>
+              <FaCircle className="circle" />
+              <a href="/#about">About</a>
             </li>
             <li>
-              <FaCircle />
+              <FaCircle className="circle" />
+              <a href="/#projects">Projects</a>
+            </li>
+            <li>
+              <FaCircle className="circle" />
               <a href="https://notes.mconsunji.com">Notes</a>
             </li>
           </NavLinks>
