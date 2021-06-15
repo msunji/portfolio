@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
         --primary-yellow: #edd219;
         --primary-blue: #2E60A4;
         --primary-pink: #F6C9BE;
+        --blob-blue: #1ac4c6;
     }
 
     *,
@@ -22,6 +23,7 @@ const GlobalStyle = createGlobalStyle`
     html, body {
         font: 18px/1.5 'Roboto';
         scroll-behavior: smooth;
+        overflow-x: hidden;
     }
 
     body {
@@ -96,6 +98,25 @@ const GlobalStyle = createGlobalStyle`
         width: 90%;
         max-width: 1200px;
         margin: 0 auto;
+    }
+
+    section {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .blob {
+
+        &--blue {
+            position: absolute;
+            fill: var(--blob-blue);
+            top: -550px;
+            left: -200px;
+            z-index: -1;
+            min-width: 30rem;
+            max-width: 60rem;
+        }
+
     }
 
     footer {

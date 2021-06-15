@@ -6,17 +6,18 @@ import Projects from "./Projects";
 // some styled components
 const IntroContainer = styled.div`
   display: flex;
-  width: 100%;
-  // height: 100%;
   justify-content: center;
   align-items: center;
   text-align: center;
   height: 100%;
+  height: 60vh;
   h1 {
     font-size: 4em;
     line-height: 1.2;
   }
-  height: 100vh;
+
+  position: relative;
+  z-index: 10;
 `;
 
 const Underline = styled.span`
@@ -31,7 +32,7 @@ const Symbols = styled.span`
 function Intro() {
   return (
     <div className="intro">
-      <IntroContainer>
+      <IntroContainer className="container">
         <h1>
           Hey! ✌🏻 <br />
           I'm <Underline>Marge Consunji</Underline> <br />
@@ -39,6 +40,7 @@ function Intro() {
           🥟
         </h1>
       </IntroContainer>
+
       <About />
       <Projects />
     </div>
