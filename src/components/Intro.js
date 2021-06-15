@@ -27,10 +27,22 @@ const Underline = styled.span`
 
 const Symbols = styled.span`
   color: red;
+  animation: spin 9s infinite linear;
+  display: inline-block;
+  height: inherit;
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
 `;
 
 const HandWave = styled.span`
-  animation: wave 2s infinite;
+  animation: wave 2s infinite linear;
   display: inline-block;
 
   @keyframes wave {
