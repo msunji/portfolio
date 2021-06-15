@@ -80,20 +80,6 @@ const GlobalStyle = createGlobalStyle`
         border-bottom: 2px solid var(--primary-red);
     }
 
-    .boxLink {
-        padding: 1rem 2rem 1rem 2rem;
-        border: 2px solid var(--primary-blue);
-        box-shadow: 5px 5px var(--primary-blue);
-        background: linear-gradient(to left top, white 50%, var(--primary-yellow) 50%);
-        background-size: 200% 200%;
-        background-position: bottom right;
-        transition: all 0.5s ease-in-out;
-
-        &:hover {
-            background-position: top left;
-        }
-    }
-
     .container {
         width: 90%;
         max-width: 1200px;
