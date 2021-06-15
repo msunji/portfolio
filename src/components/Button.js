@@ -14,7 +14,7 @@ const StyledButton = styled.button`
   background-position: bottom right;
   transition: all 0.5s ease-in-out;
 
-  :hover {
+  &:hover {
     background-position: top left;
   }
 
