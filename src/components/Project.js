@@ -17,12 +17,14 @@ const ProjectInfo = styled.div`
   z-index: 1000;
   left: 30%;
   top: 30%;
+  border: 3px solid #2e60a4;
+  box-shadow: 10px 10px #2e60a4;
 `;
 
 const ProjectTitle = styled.h3``;
 
 const ProjectDescription = styled.p`
-  margin-bottom: 0;
+  margin-bottom: 3rem;
 `;
 
 function Project(props) {
