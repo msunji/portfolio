@@ -5,6 +5,7 @@ import "./app.css";
 import Nav from "./components/Nav";
 import Intro from "./components/Intro";
 import Footer from "./components/Footer";
+import Notes from "./projects/Notes";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Intro />
+            </Route>
+            <Route exact path="/projects/notes">
+              <Notes />
             </Route>
           </Switch>
           <Footer />
