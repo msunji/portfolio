@@ -17,6 +17,8 @@ const ProjectContainer = styled.section`
   }
 `;
 
+const ProjectOverview = styled.section``;
+
 const Notes = () => {
   return (
     <ProjectContainer>
@@ -35,15 +37,20 @@ const Notes = () => {
           <div className="grid-child">
             <h4>View</h4>
             <small>
-              <a href="">Code</a>
+              <a href="https://github.com/msunji/notes">Code</a>
             </small>{" "}
             /{" "}
             <small>
-              <a href="">Live Site</a>
+              <a href="https://notes.mconsunji.com/">Live Site</a>
             </small>
           </div>
         </div>
       </div>
+      <ProjectOverview>
+        <div className="container">
+          <h3>Overview</h3>
+        </div>
+      </ProjectOverview>
     </ProjectContainer>
   );
 };
