@@ -104,12 +104,6 @@ const GlobalStyle = createGlobalStyle`
         }
 
     }
-
-    footer {
-        border-top: 1px solid brown;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-    }
 `;
 
 export default GlobalStyle;

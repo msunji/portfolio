@@ -1,13 +1,21 @@
 import React from "react";
+import styled from "styled-components";
+
+const SiteFooter = styled.section`
+  background: var(--main-text-color);
+  color: var(--main-bg-color);
+`;
 
 function Footer() {
   return (
-    <footer className="container">
-      <p>Let's work together!</p>
-      <div>
-        <a href="mailto:hey@mconsunji.com">hey@mconsunji.com</a>
+    <SiteFooter>
+      <div className="container">
+        <h3>Let's work together!</h3>
+        <div>
+          <a href="mailto:hey@mconsunji.com">hey@mconsunji.com</a>
+        </div>
       </div>
-    </footer>
+    </SiteFooter>
   );
 }
 
