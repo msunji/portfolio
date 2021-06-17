@@ -35,20 +35,17 @@ const NavHome = styled(Link)`
 `;
 
 const NavLinks = styled.ul`
-  display: flex;
-  align-items: center;
+  display: inline-flex;
 
   li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
+    font-size: 1em;
     &:not(:last-of-type) {
       margin-right: 3em;
     }
 
-    & svg {
-      margin-right: 10px;
+    a {
+      display: inline-flex;
+      align-items: center;
     }
   }
 
@@ -56,25 +53,26 @@ const NavLinks = styled.ul`
   a:visited {
     text-decoration: none;
     border-bottom: none;
-    transition: all 0.5s ease;
+    transition: fill 0.5s ease;
   }
 
   a:hover,
   a:focus {
-    color: blue;
-    text-decoration: underline;
+    font-weight: 700;
+    color: var(--main-text-color);
   }
 
   .circle {
+    transition: all 0.4s ease-in-out;
+    margin-right: 10px;
+    fill: var(--main-text-color);
+    width: 1em;
     height: 1em;
-    fill: #0D443D;
   }
-
-  .circle:
 
   li:hover {
     .circle {
-      animation: fill-circle 0.4s linear;
+      fill: var(--primary-red);
     }
   }
 `;
@@ -91,16 +89,22 @@ function Header() {
 
           <NavLinks>
             <li>
-              <FaCircle className="circle" />
-              <a href="/#about">About</a>
+              <a href="/#about">
+                <FaCircle className="circle" />
+                <span>About</span>
+              </a>
             </li>
             <li>
-              <FaCircle className="circle" />
-              <a href="/#projects">Projects</a>
+              <a href="/#projects">
+                <FaCircle className="circle" />
+                <span>Projects</span>
+              </a>
             </li>
             <li>
-              <FaCircle className="circle" />
-              <a href="https://notes.mconsunji.com">Notes</a>
+              <a href="https://notes.mconsunji.com">
+                <FaCircle className="circle" />
+                <span>Notes</span>
+              </a>
             </li>
           </NavLinks>
         </NavContainer>
