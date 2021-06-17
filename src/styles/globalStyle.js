@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
         --primary-red: #E0540F;
         --primary-yellow: #edd219;
         --primary-blue: #2E60A4;
+        --darker-blue: #1b3558;
         --primary-pink: #F6C9BE;
         --blob-blue: #1ac4c6;
     }
