@@ -5,6 +5,8 @@ import Button from "./Button";
 const ProjectTile = styled.div`
   position: relative;
   margin-bottom: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 `;
 
 const ProjectThumbnail = styled.picture``;
@@ -24,7 +26,9 @@ const ProjectInfo = styled.div`
 const ProjectTitle = styled.h3``;
 
 const ProjectDescription = styled.p`
-  margin-bottom: 3rem;
+  font-size: 1.3em;
+  line-height: 1.4;
+  margin-bottom: 2rem;
 `;
 
 function Project(props) {
