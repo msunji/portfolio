@@ -31,17 +31,17 @@ const ProjectDescription = styled.p`
   margin-bottom: 2rem;
 `;
 
-function Project(props) {
+function Project({ title, desc, thumbnail, link }) {
   return (
-    <ProjectTile className={props.class}>
+    <ProjectTile>
       <ProjectThumbnail>
-        <source srcset={props.thumbnail} />
-        <img src={props.thumbnail} alt={`Preview for ${props.title} project`} />
+        {/* <source srcSet={props.thumbnail} /> */}
+        <img src={thumbnail} alt={`Preview for ${title} project`} />
       </ProjectThumbnail>
       <ProjectInfo>
-        <ProjectTitle>{props.title}</ProjectTitle>
-        <ProjectDescription>{props.desc}</ProjectDescription>
-        <Button text="View Project" link="" />
+        <ProjectTitle>{title}</ProjectTitle>
+        <ProjectDescription>{desc}</ProjectDescription>
+        <Button text="View Project" link={link} />
       </ProjectInfo>
     </ProjectTile>
   );

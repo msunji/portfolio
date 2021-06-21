@@ -18,8 +18,14 @@ const Projects = () => {
           <p>Here are a few things I've worked on.</p>
         </div>
         <ProjList>
-          {ProjectInfo.map(({ id, title, desc, thumb }) => (
-            <Project key={id} title={title} desc={desc} thumbnail={thumb} />
+          {ProjectInfo.map(({ id, title, desc, thumb, link }) => (
+            <Project
+              key={id}
+              title={title}
+              desc={desc}
+              thumbnail={thumb}
+              link={link}
+            />
           ))}
         </ProjList>
       </div>
