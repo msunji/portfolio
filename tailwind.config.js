@@ -1,8 +1,12 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    // Example content paths...
+    './public/**/*.html',
+    './src/**/*.{js,jsx,ts,tsx,vue}',
+  ],
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
     colors: {
       transparent: 'transparent',
@@ -16,9 +20,6 @@ module.exports = {
     extend: {
       textColor: ['visited'],
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [],
 }
