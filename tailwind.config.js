@@ -10,11 +10,10 @@ module.exports = {
   theme: {
     colors: {
       transparent: 'transparent',
-      yellow: colors.amber,
-      gray: colors.coolGray,
+      primary: colors.emerald,
     },
     fontFamily: {
-      'sans': ['ui-sans-serif', 'system-ui', 'Helvetica Neue', 'sans-serif'],
+      'sans': ['Archivo','ui-sans-serif', 'system-ui', 'Helvetica Neue', 'sans-serif'],
       'mono': ['ui-monospace', "Liberation Mono", 'monospace'],
     },
     extend: {
