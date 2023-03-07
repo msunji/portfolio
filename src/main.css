@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    @apply text-gray-800;
+@layer base {
+    body {
+        font-size: 18px;
+        letter-spacing: 1.2px;
+    }
+    a {
+        @apply text-primary-500 hover:text-primary-900 hover:underline;
+    }
 }
 
-a {
-    @apply text-yellow-500 font-semibold hover:text-yellow-600 hover:underline;
-}
