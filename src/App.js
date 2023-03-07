@@ -1,11 +1,15 @@
 function App() {
   return (
     <div className="App">
-      <section className="max-w-xl mx-auto mt-32 px-8">
-        <p className="uppercase tracking-wide mb-1 font-mono">Hey there, I'm</p>
-        <h1 className="text-4xl mb-2 font-extrabold">Marge Consunji <span>✌️</span></h1>
-        <p className="mb-4 leading-7">I have a background in economic research,  but over the last year or so, I've been transitioning into web development. Still working on getting this portfolio sorted out, so come back later.</p>
-        <p className="mb-4 leading-7">In the meantime, here's my <a href="https://github.com/msunji">Github account</a>. I'm always keen to do more front-end work, as well as English-Filipino/Tagalog translations. <a href="mailto:hey@mconsunji.com">Send me a line!</a></p>
+      <section className="max-w-2xl mt-32 px-8 mb-4 space-y-4">
+        <h1 className="text-8xl font-extrabold">Hello</h1> 
+        <p className="leading-7 text-4">Hey there, it's nice to meet you. I'm Marge Consunji. Over the last few years, I have been transitioning from economic research to design and frontend development work. I build things with React and Next.js, but am always open to exploring different technologies. When I'm not at my desk, you can find me baking, drawing, playing video games, or hanging out with my cats 🐱</p>
+      </section>
+      <section className="max-w-2xl mt-32 px-8 mb-4 space-y-4">
+        <h2 className="text-4xl font-extrabold">Currently</h2> 
+        <ul>
+          <li><a href="https://github.com/msunji/puppeteer-dividends">Dividends</a> - A web scraper built with Puppeteer and Node that collates the latest dividend announcements from Philippine Stock Exchange Edge (PSE Edge)</li>
+        </ul>
       </section>
     </div>
   );
