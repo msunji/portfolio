@@ -8,7 +8,7 @@ function App() {
       <section className="max-w-2xl mt-32 px-8 mb-4 space-y-4">
         <h2 className="text-4xl font-extrabold">Currently</h2> 
         <ul>
-          <li><a href="https://github.com/msunji/puppeteer-dividends">Dividends</a> - A web scraper built with Puppeteer and Node that collates the latest dividend announcements from Philippine Stock Exchange Edge (PSE Edge)</li>
+          <li><a href="https://github.com/msunji/puppeteer-dividends">Dividend News</a> - A web scraper built with Puppeteer and Node that collates the latest dividend announcements from Philippine Stock Exchange Edge (PSE Edge)</li>
         </ul>
       </section>
     </div>
